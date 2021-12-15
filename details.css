@@ -35,20 +35,24 @@ body{
 .container{
     height: 600px;
     width: 100%;
-    border: 2px solid black;
 }
 .imgContainer{
     margin-left: 5%;
-    border: 2px solid black;
     width: 40%;
     float: left;
+    box-shadow: 10px 20px 10px grey;
 }
 .img{
     height: 400px;
     width: 100%;
 }
+.container > h1{
+    text-align: center;
+    color: brown;
+}
 .contentContainer{
-    border: 2px solid black;
+    box-shadow: 10px 20px 10px grey;
+    background-color: #dbbeb3;
     height: 500px;
     width: 45%;
     float: left;
@@ -56,7 +60,7 @@ body{
 }
 .contentContainer > h1{
     text-align: center;
-    color: brown;
+    color: rgb(202, 90, 90);
     font-size: 40px;
 }
 .checked{
@@ -67,4 +71,48 @@ body{
 }
 .none{
     margin-left: 4%;
+}
+.noneContainer > h4{
+    margin-left: 4%;
+}
+.feature{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 3%; 
+    margin-left: 4%;
+}
+.featureContainer{
+    
+    height: 100px;
+    width: 100%;
+    margin-bottom: 0%;
+}
+.feature > p{
+    font-size: 15px;
+    line-height: 7px;
+    font-weight: bold;
+    text-align: center;
+}
+
+hr{
+    height: 2px;
+    color: black;
+    background-color: #000
+}
+.btn{
+    margin-top: 4%;
+    height: 40px;
+    width: 250px;
+    margin-left: 5%;
+    border: 1px groove black;
+    border-radius:5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.btn-buynow{
+    background-color: #999393;
+}
+.btn-cart{
+    background-color: #3dc93d;
 }
