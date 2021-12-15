@@ -48,7 +48,7 @@ body{
 }
 .container > h1{
     text-align: center;
-    color: brown;
+    color: rgb(226, 94, 94);
 }
 .contentContainer{
     box-shadow: 10px 20px 10px grey;

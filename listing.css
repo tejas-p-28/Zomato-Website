@@ -130,6 +130,9 @@ body{
     border: 1px groove black;
     font-weight: bold;
 }
+.btn > a{
+    color: black;
+}
 /*filter Css Ends*/
 hr{
     height: 2px;
