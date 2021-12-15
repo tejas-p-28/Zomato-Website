@@ -1,0 +1,70 @@
+/*Header Css starts*/
+a{
+    text-decoration: none;
+}
+h1 > a{
+    color: #e97601;
+}
+body{
+    margin: auto;
+    background-color: #d9ae9f;
+    
+}
+#header{
+    height:60px;
+    width: 100%;
+    background-color: #b56f56;
+}
+.icon{
+    font-size: 18px;
+    position: absolute;
+    margin-left: 1%;
+    margin-top: -1%;
+    color: #e97601;
+    text-decoration: none;
+}
+.socials{
+    float: right;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+.slogo{
+    height: 40px;
+    width: 40px;
+}
+.container{
+    height: 600px;
+    width: 100%;
+    border: 2px solid black;
+}
+.imgContainer{
+    margin-left: 5%;
+    border: 2px solid black;
+    width: 40%;
+    float: left;
+}
+.img{
+    height: 400px;
+    width: 100%;
+}
+.contentContainer{
+    border: 2px solid black;
+    height: 500px;
+    width: 45%;
+    float: left;
+    margin-left: 4%;
+}
+.contentContainer > h1{
+    text-align: center;
+    color: brown;
+    font-size: 40px;
+}
+.checked{
+    color: red;
+}
+.unchecked{
+    color: green;
+}
+.none{
+    margin-left: 4%;
+}

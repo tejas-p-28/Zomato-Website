@@ -1,0 +1,138 @@
+/*Header Css starts*/
+a{
+    text-decoration: none;
+}
+h1 > a{
+    color: #e97601;
+}
+body{
+    margin: auto;
+    background-color: #d9ae9f;
+    
+}
+#header{
+    height:60px;
+    width: 100%;
+    background-color: #b56f56;
+}
+.icon{
+    font-size: 18px;
+    position: absolute;
+    margin-left: 1%;
+    margin-top: -1%;
+    color: #e97601;
+    text-decoration: none;
+}
+.socials{
+    float: right;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+.slogo{
+    height: 40px;
+    width: 40px;
+}
+/*Header Css ends*/
+/*filter Css Starts*/
+.filter > h1{
+    text-align: center;
+    color: crimson;
+}
+.filter{
+    height: 1300px;
+    width: 100%;
+}
+.filterList{
+    height: 50%;
+    width: 20%;
+    margin-left: 7%;
+    margin-top: 3%;
+    float: left;
+    box-shadow: 10px 20px 10px grey;
+    background-color: #d3c2bc;
+}
+.filterList > h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkgreen;
+}
+.select{
+    height: 30px;
+    width: 200px;
+    margin-left: 12%;
+}
+.region > h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkgreen;
+}
+.type >  h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkgreen;
+    
+}
+
+.typeContainer > h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkgreen;
+}
+.filterItems{
+    height: 1150px;
+    width: 65%;
+    float: left;
+    margin-top: 3%;
+    margin-left: 3%;
+    
+}
+.itemContainer{
+    height: 250px;
+    width: 80%;
+    box-shadow: 10px 20px 10px grey;
+    background-color:#d3c2bc;
+    margin-bottom: 5%;    
+}
+.imgContainer{
+    height: 250px;
+    width: 40%;
+    float: left;
+}
+.img{
+    height: 250px;
+    width: 100%; 
+    border-radius: 10%;
+}
+.contentContainer{
+    float: left;
+    
+}
+.contentContainer > h2{
+    
+    color: #1a237e;
+}
+.contentContainer > p{
+    color: firebrick;
+    font-weight: bold;
+}
+.checked{
+    color: red;
+}
+.unchecked{
+    color: green;
+}
+.btn{
+    height: 30px;
+    width: 70px;
+    margin-left: 40%;
+    color: #000;
+    background-color:#f1839c;
+    border: 1px groove black;
+    font-weight: bold;
+}
+/*filter Css Ends*/
+hr{
+    height: 2px;
+    color: black;
+    background-color: #000
+}
