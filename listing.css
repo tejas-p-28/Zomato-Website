@@ -150,48 +150,25 @@ hr{
 
 
 @media screen and (max-width:1400px){
-    body{
-        background-color: rgb(235, 177, 156);
+    .selectContainer > h2{
+        float: left;
+        font-family: Arial, Helvetica, sans-serif;
+        color: darkgreen;
+        margin-left: 25%;
     }
 }
 
 @media screen and (max-width:1200px){
-    body{
-        background-color: rgb(234, 240, 149);
+    .icon{
+        font-size: 18px;
+        position: absolute;
+        margin-left: 1%;
+        margin-top: -1%;
     }
     .select{
         height: 30px;
         width: 180px;
         margin-left: 7%;
-    }
-}
-
-@media screen and (max-width:1000px){
-    body{
-        background-color: rgb(209, 235, 175);
-    }
-    .filter{
-        height: 810px;
-        width: 85%;
-        margin-left: 3%;
-    }
-    .filterList{
-        height: 180px;
-        width: 100%;
-        margin-left: 5%;
-    }
-    
-    .select{
-        
-        height: 35px;
-        width: 140px;
-    }
-    select{
-        margin-top: 7%;
-    }
-    .selectContainer{
-        float: left;
-        margin-left: 5%;
     }
     .selectContainer > h2{
         float: left;
@@ -199,9 +176,43 @@ hr{
         color: darkgreen;
         margin-left: 25%;
     }
+}
+
+@media screen and (max-width:1000px){
+    .filter{
+        height: 860px;
+        width: 85%;
+        margin-left: 3%;
+    }
+    .filterList{
+        height: 200px;
+        width: 100%;
+        margin-left: 5%;
+    }
+    
+    .select{
+        
+        height: 33px;
+        width: 135px;
+        margin-left: 3%;
+    }
+    select{
+        margin-top: 7%;
+    }
+    .selectContainer{
+        float: left;
+        margin-left: 3%;
+    }
+    .selectContainer > h2{
+        float: left;
+        font-family: Arial, Helvetica, sans-serif;
+        color: darkgreen;
+        margin-left: 25%;
+        margin-left: 19%;
+    }
     .region{
         float: left;
-        margin-left: 5%;
+        margin-left: 3%;
         
     }
     .region > h2{
@@ -214,7 +225,7 @@ hr{
     }
     .typeContainer{
         float: left;
-        margin-left: 10%;
+        margin-left: 6%;
         
     }
     .filterItems{
@@ -224,13 +235,129 @@ hr{
         display: inline-block;
     }
     .itemContainer{
-        height: 200px;
+        height: 195px;
         width: 47%;
         margin-left: 2%;
         display: inline-block;   
     }
     .imgContainer{
+        height: 195px;
+        width: 49%;
+        float: left;
+    }
+    .img{
+        height: 100%;
+        width: 100%; 
+        border-radius: 10%;
+    }
+    .contentContainer{
+        margin-left: 7%;
+    }
+    .contentContainer > h2{
+        font-size: 20px;
+        color: #1a237e;
+    }
+    .contentContainer > p{
+        color: firebrick;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 10px;
+
+    }
+    .checked{
+        color: red;
+    }
+    .unchecked{
+        color: green;
+    }
+    .btn{
+        height: 30px;
+        width: 70px;
+        margin-left: 40%;
+        color: #000;
+        background-color:#f1839c;
+        border: 1px groove black;
+        font-weight: bold;
+    }
+    
+}
+
+@media screen and (max-width:900px){
+    .icon{
+        font-size: 18px;
+        position: absolute;
+        margin-left: 1%;
+        margin-top: -2%;
+    }
+    .filter{
+        height: 800px;
+        width: 85%;
+        margin-left: 3%;
+    }
+    .filterList{
         height: 200px;
+        width: 100%;
+        margin-left: 6%;
+    }
+    
+    .select{
+        
+        height: 30px;
+        width: 130px;
+    }
+    select{
+        margin-top: 5%;
+    }
+    .selectContainer{
+        float: left;
+        margin-left: 2%;
+    }
+    .selectContainer > h2{
+        float: left;
+        font-family: Arial, Helvetica, sans-serif;
+        color: darkgreen;
+        margin-left: 20%;
+        font-size: 20px;
+    }
+    .region{
+        float: left;
+        margin-left: 2%;
+        
+    }
+    .region > h2{
+        text-align: center;
+        font-size: 20px;
+        
+    }
+    .type{
+        float: left;
+        margin-left: 6%;
+    }
+    .type > h2{
+        font-size: 20px;
+    }
+    .typeContainer{
+        float: left;
+        margin-left: 10%;
+        
+    }
+    .typeContainer > h2{
+        font-size: 20px;
+    }
+    .filterItems{
+        height: 400px;
+        margin-top: 10%;
+        width: 100%;
+        display: inline-block;
+    }
+    .itemContainer{
+        height: 180px;
+        width: 47%;
+        margin-left: 2%;
+        display: inline-block;   
+    }
+    .imgContainer{
+        height: 180px;
         width: 40%;
         float: left;
     }
@@ -268,53 +395,317 @@ hr{
         border: 1px groove black;
         font-weight: bold;
     }
-    
-}
-
-@media screen and (max-width:900px){
-    body{
-        background-color: rgb(209, 235, 175);
-    }
-    .select{
-        height: 30px;
-        width: 170px;
-        margin-left: 7%;
-    }
 }
 
 @media screen and (max-width:800px){
-    body{
-        background-color: rgb(190, 235, 176);
+    .socials{
+        margin-top: 1.5%;
     }
+    .filter{
+        height: 737px;
+        width: 85%;
+        margin-left: 3%;
+    }
+    .filterList{
+        height: 200px;
+        width: 100%;
+        margin-left: 6%;
+    }
+    
     .select{
-        height: 30px;
-        width: 130px;
-        margin-left: 7%;
+        
+        height: 27px;
+        width: 125px;
+    }
+    select{
+        margin-top: 5%;
+    }
+    .selectContainer{
+        float: left;
+        margin-left: 1%;
+    }
+    .selectContainer > h2{
+        float: left;
+        font-family: Arial, Helvetica, sans-serif;
+        color: darkgreen;
+        margin-left: 20%;
+        font-size: 18px;
+    }
+    .region{
+        float: left;
+        margin-left: 2%;
+        
+    }
+    .region > h2{
+        text-align: center;
+        font-size: 18px;
+        
+    }
+    .type{
+        float: left;
+        margin-left: 3%;
+    }
+    .type > h2{
+        font-size: 18px;
+    }
+    .typeContainer{
+        float: left;
+        margin-left: 5%;
+        
+    }
+    .typeContainer > h2{
+        font-size: 18px;
+    }
+    .filterItems{
+        height: 400px;
+        margin-top: 10%;
+        width: 100%;
+        display: inline-block;
+    }
+    .itemContainer{
+        height: 145px;
+        width: 47%;
+        margin-left: 2%;
+        display: inline-block;   
+    }
+    .imgContainer{
+        height: 145px;
+        width: 40%;
+        float: left;
+    }
+    .img{
+        height: 100%;
+        width: 100%; 
+        border-radius: 10%;
+    }
+    .contentContainer{
+        margin-left: 5%;
     }
     .contentContainer > h2{
+        font-size: 18px;
         color: #1a237e;
-        font-size: 20px;
+    }
+    .contentContainer > p{
+        color: firebrick;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 5px;
+
+    }
+    .checked{
+        color: red;
+    }
+    .unchecked{
+        color: green;
+    }
+    .btn{
+        height: 30px;
+        width: 70px;
+        margin-left: 40%;
+        color: #000;
+        background-color:#f1839c;
+        border: 1px groove black;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width:700px){
+    .filter{
+        height: 1330px;
+        width: 85%;
+        margin-left: 3%;
+    }
+    .socials{
+        margin-top: 2%;
+    }
+    .filterList{
+        height: 330px;
+        width: 97%;
+        margin-left: 6%;
+    }
+    
+    .select{  
+        height: 35px;
+        width: 160px;
+    }
+    select{
+        margin-top: 5%;
+    }
+    .selectContainer{
+        float: left;
+        margin-left: 12%;
+    }
+    .selectContainer > h2{
+        float: left;
+        font-family: Arial, Helvetica, sans-serif;
+        color: darkgreen;
+        margin-left: 20%;
+        font-size: 25px;
+    }
+    .region{
+        float: left;
+        margin-left: 12%;
+        
+    }
+    .region > h2{
+        text-align: center;
+        font-size: 25px;
+        
+    }
+    .type{
+        float: left;
+        margin-left: 16%;
+    }
+    .type > h2{
+        font-size: 25px;
+    }
+    .typeContainer{
+        float: left;
+        margin-left: 26%;
+        
+    }
+    .typeContainer > h2{
+        font-size: 25px;
+    }
+    .filterItems{
+        height: 790px;
+        margin-top: 5%;
+        width: 100%;
+        display: inline-block;
+    }
+    .itemContainer{
+        height: 180px;
+        width: 100%;
+        margin-left: 2%;
+        display: inline-block;  
+        margin-bottom: 8%; 
+    }
+    
+    .imgContainer{
+        height: 100%;
+        width: 40%;
+        float: left;
+    }
+    .img{
+        height: 100%;
+        width: 100%; 
+        border-radius: 10%;
+    }
+    .contentContainer{
+        margin-left: 5%;
+    }
+    .contentContainer > h2{
+        font-size: 25px;
+        color: #1a237e;
+    }
+    .contentContainer > p{
+        color: firebrick;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 5px;
+
+    }
+    .checked{
+        color: red;
+    }
+    .unchecked{
+        color: green;
+    }
+    .btn{
+        height: 30px;
+        width: 70px;
+        margin-left: 40%;
+        color: #000;
+        background-color:#f1839c;
+        border: 1px groove black;
+        font-weight: bold;
     }
 }
 
 @media screen and (max-width:600px){
-    body{
-        background-color: rgb(154, 235, 187);
+    .filter{
+        height: 1330px;
+        width: 85%;
+        margin-left: 3%;
     }
-    .select{
-        height: 30px;
-        width: 100px;
-        margin-left: 7%;
+    .socials{
+        margin-top: 2%;
     }
+    .filterList{
+        height: 330px;
+        width: 97%;
+        margin-left: 6%;
+    }
+    
+    .select{  
+        height: 35px;
+        width: 140px;
+    }
+    select{
+        margin-top: 5%;
+    }
+    .selectContainer{
+        margin-left: 12%;
+    }
+    .selectContainer > h2{
+        margin-left: 20%;
+    }
+    .region{
+        margin-left: 6%;     
+    }
+    
+    .type{
+        margin-left: 13%;
+    }
+    
+    .typeContainer{
+        margin-left: 18%;
+    }
+    
 }
 
-@media screen and (max-width:400px){
-    body{
-        background-color: rgb(235, 177, 156);
+@media screen and (max-width:500px){
+    .icon{
+        font-size: 18px;
+        position: absolute;
+        margin-left: 1%;
+        margin-top: -3%;
     }
-}
-@media screen and (max-width:200px){
-    body{
-        background-color: rgb(235, 177, 156);
+    .socials{
+        margin-top: 2%;
+    }
+    .filter{
+        height: 1330px;
+        width: 85%;
+        margin-left: 3%;
+    }
+    .filterList{
+        height: 330px;
+        width: 97%;
+        margin-left: 6%;
+    }
+    
+    .select{  
+        height: 35px;
+        width: 140px;
+    }
+    select{
+        margin-top: 5%;
+    }
+    .selectContainer{
+        margin-left: 12%;
+    }
+    .selectContainer > h2{
+        margin-left: 20%;
+    }
+    .region{
+        margin-left: 3%;     
+    }
+    
+    .type{
+        margin-left: 13%;
+    }
+    
+    .typeContainer{
+        margin-left: 18%;
     }
 }
