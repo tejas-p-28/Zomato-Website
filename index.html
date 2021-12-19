@@ -1,6 +1,10 @@
 <html>
     <head>
+        <title>Zomato</title>
         <link rel="stylesheet" href="home.css" style="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
         <!--Header Starts-->
@@ -9,11 +13,11 @@
                 <h1>Zomato</h1>
             </div>
             <div class="socials">
-                <a href="https://www.instagram.com/innocent_boy_tp/" target="_blank">
-                    <img src="./images/insta.png" alt="Instagram" class="slogo">
+                <a class="btn btn-success" href="" target="_blank">
+                    Login
                 </a>
-                <a href="https://www.facebook.com/tejas.b.patil.12" target="_blank">
-                    <img src="./images/facebook.png" alt="Facebook"  class="slogo">
+                <a class="btn btn-warning" href="" target="_blank">
+                    SignUP
                 </a>
                 
             </div>
@@ -28,20 +32,26 @@
                 Find the Best Restaurants near you!!!
             </div>
             <div class="dropdown">
-                <select>
-                    <option>---Select City---</option>
-                    <option>Nandurbar</option>
-                    <option>Shahada</option>
-                    <option>Mumbai</option>           
-                    <option>Pune</option>
-                </select>
-                <select class="restauSelect">
-                    <option>---Select Restaurants---</option>
-                    <option>Hotel Sanjay</option>
-                    <option>Hotel Apple</option>
-                    <option>Hotel Novotel</option>
-                    <option>Rest-O-Hotel</option>
-                </select>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <select class="form-control" name="city">
+                            <option value="">Select Location</option>
+                            <option >Delhi</option>
+                            <option>Pune</option>
+                            <option>Mumbai</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <select class="form-control" name="restaurants">
+                            <option>Restaurants</option>
+                            <option ></option>
+                            <option></option>
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
             </div>
         </div>
         <!--Search Ends-->
