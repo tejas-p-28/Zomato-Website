@@ -83,28 +83,24 @@ a{
 }
 select{
     height: 40px;
-}
-.row{
-    display:inline-block;
-}
-.dropdown{
-    width: 100%;
     margin-left: 18%;
+    width: 30%;
+}
+
+.dropdown{
+    width: 60%;
+    margin-left:40%;
     position: absolute;
-    float:left;
     margin-top: 22%;
 }
 .restauSelect{
     width:50%;
-    margin-left: 50%;
-    margin-top:-4%;
-    float:left;
 }
 
 .location{
     margin-left: 18%;
     width: 30%;
-    float:left;
+
 }
 
 #quicksearch{
@@ -168,9 +164,7 @@ select{
     width: 100%;
     height: 180px;
 }
-.tileComponent2{
-    
-}
+
 .tileHeading{
     font-size:30px;
     text-align: center;
@@ -193,11 +187,10 @@ select{
 @media screen and (max-width:1300px){
     .restauSelect{
         width:50%;
-        margin-left: 50%;
-        margin-top: -4.5%;
+
     }
     .dropdown{
-    margin-top: 27%;
+        margin-top: 27%;
     }
     .heading{
         margin-top: 16%;
@@ -207,8 +200,7 @@ select{
 @media screen and (max-width:1200px){
     .restauSelect{
         width:50%;
-        margin-left: 50%;
-        margin-top: -5.5%;
+
     }
     #logo{
         height: 100px;
@@ -245,7 +237,7 @@ select{
         100%{margin-left: 35%; font-size: 35px; }
     }
     .dropdown{
-        margin-left: 18%;
+        margin-left: 40%;
         margin-top: 30%;
     }
     .card{
@@ -253,10 +245,11 @@ select{
 }
 
 @media screen and (max-width:1100px){
+    select{
+        width: 35%;
+    }
     .restauSelect{
-        width:50%;
-        margin-left: 50%;
-        margin-top: -6%;
+        width:60%;
     }
     #logo{ 
         animation: coll 10s infinite;  
@@ -285,7 +278,7 @@ select{
         100%{margin-left: 35%; font-size: 35px; }
     }
     .dropdown{
-        margin-left: 18%;
+        margin-left:35%;
         margin-top: 30%;
     }
     .card{
@@ -297,18 +290,18 @@ select{
 }
 
 @media screen and (max-width:1000px){
-    .restauSelect{
-        margin-top: -6.5%;
-    }
     .mainTile{
         margin-left:13%
+    }
+    .heading{
+        margin-left: 25%;
     }
     .card{
         margin-left:4%;
         margin-top: 5%;
     }
     .dropdown{
-        margin-left: 22%;
+        margin-left: 35%;
     }
     #quicksearch{
         height:1200px;
@@ -318,9 +311,7 @@ select{
     .dropdown{
         margin-top: 40%;
     }
-    .restauSelect{
-        margin-top: -7.5%;
-    }
+ 
     .heading{
         font-size: 30px;
         margin-top: 20%;
@@ -356,9 +347,6 @@ select{
 }
 
 @media screen and (max-width:800px){
-    .restauSelect{
-        margin-top: -8.5%;
-    }
     .mainTile{
         margin-left: 7%;
     }
@@ -376,6 +364,9 @@ select{
         margin-left:10%;
         font-size: 30px;
     }
+    select{
+        width: 100%;
+    }
     .location{
         margin-left: 10%;
         width: 100%;
@@ -383,7 +374,7 @@ select{
     .restauSelect{
         margin-top:8%;
         width: 100%;
-        margin-left: 10%;
+
     }
     .mainTile{
         margin-left: 1%;
@@ -404,12 +395,10 @@ select{
     }
     .restauSelect{
         width:100%;
-        margin-left: 10%;
         margin-top: 5%;
     }
     
     .location{
-        margin-left: 10%;
         width: 100%;
     }
     .mainTile{
