@@ -1,52 +1,49 @@
 <html>
     <head>
         <title>Zomato</title>
-        <link rel="stylesheet" href="home.css" style="text/css">
+        <link rel="stylesheet" href="index.css" style="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+        
+        <meta name="viewport" content="device-width=device">
     </head>
-    <body>
+    <body style="background-color:#e9a48c;">
         <!--Header Starts-->
-        <div id="header">
-            <div class="icon">
-                <h1>Zomato</h1>
-            </div>
-            <div class="socials">
-                <a class="btn btn-success" href="" target="_blank">
+        <div class="containers">
+            <div class=" background-img">
+                
+                <a class="btn btn-success" href="#" >
                     Login
                 </a>
-                <a class="btn btn-warning" href="" target="_blank">
+                <a class="btn btn-warning" href="#" >
                     SignUP
                 </a>
-                
-            </div>
-        </div>
-        <!--Header Ends-->
-        <!--Search Start-->
-        <div id="search">
-            <div id="logo">
-                <span>TP!</span>
-            </div>
-            <div class="heading">
-                Find the Best Restaurants near you!!!
-            </div>
-            <div class="dropdown">
-                <div class="form-group">
-                    <div class="col-md-6">
-                        <select class="form-control" name="city">
-                            <option value="">Select Location</option>
-                            <option >Delhi</option>
-                            <option>Pune</option>
-                            <option>Mumbai</option>
-                        </select>
-                    </div>
+                <div id="logo">
+                    <span>TP!</span>
                 </div>
-                <div class="form-group">
-                    <div class="col-md-6">
-                        <select class="form-control" name="restaurants">
-                            <option>Restaurants</option>
-                            <option ></option>
+                <div class="heading">
+                    <p>Find the Best Restaurants near you!!!</p>
+                </div>
+                <div class="row">
+                    <div class="dropdown">
+                        <select class="location">
+                            <option>---Select City---</option>
+                            <option>Nandurbar</option>
+                            <option>Shahada</option>
+                            <option>Mumbai</option>           
+                            <option>Pune</option>
+                        </select>
+                        <select class="restauSelect">
+                            <option>---Select Restaurants---</option>
+                            <option></option>
+                            <option></option>
                             <option></option>
                             <option></option>
                         </select>
@@ -57,73 +54,49 @@
         <!--Search Ends-->
         <!--quicksearch starts-->
         <div id="quicksearch">
-            <h1 id="quickHeading">Quick Search</h1>
+            <span id="quickHeading" style="text-align: none;">Quick Search</span>
             <h1 id="quickSubHeading">Search Your Favorite Restaurants by Meal</h1>
             <div class="mainTile">
-                <div class="tileContainer">
-                    <div class="tileComponent1">
-                        <img src="./images/sacks.png" alt="Snacks">
-                    </div>
-                    <div class="tileComponent2">
-                        <div class="tileHeading">
-                            <a href="listing.html">Snacks</a>
-                        </div>
-                        <div class="tileSubHeading">Enjoy your Snacks</div>
+                <div class="card" style="width:280px; display:inline-block; ">
+                    <img class="card-img-top" src="./images/sacks.png" alt="Snacks">
+                    <div class="card-body">
+                        <a class="card-title" href="listing.html">Snacks</a>
+                        <div class="card-text">Enjoy your Snacks</div>
                     </div>
                 </div>
-                <div class="tileContainer">
-                    <div class="tileComponent1">
-                        <img src="./images/lunch.png" alt="Dinner">
-                    </div>
-                    <div class="tileComponent2">
-                        <div class="tileHeading">
-                            <a href="listing.html">Dinner</a>
-                        </div>
-                        <div class="tileSubHeading">Enjoy your Dinner</div>
+                <div class="card" style="width:280px; display:inline-block;">
+                    <img class="card-img-top" src="./images/lunch.png" alt="Lunch">
+                    <div class="card-body">
+                        <a class="card-title" href="listing.html">Lunch</a>
+                        <div class="card-text">Enjoy your Lunch</div>
                     </div>
                 </div>
-                <div class="tileContainer">
-                    <div class="tileComponent1">
-                        <img src="./images/drinks.png" alt="Drinks">
-                    </div>
-                    <div class="tileComponent2">
-                        <div class="tileHeading">
-                            <a href="listing.html">Soft Drinks</a>
-                        </div>
-                        <div class="tileSubHeading">Enjoy your Drinks</div>
+                <div class="card" style="width:280px; display:inline-block;">
+                    <img class="card-img-top" src="./images/drinks.png" alt="Drinks">
+                    <div class="card-body">
+                        <a class="card-title" href="listing.html">Soft Drinks</a>
+                        <div class="card-text">Enjoy your drinks</div>
                     </div>
                 </div>
-                <div class="tileContainer">
-                    <div class="tileComponent1">
-                        <img src="./images/lunch.png" alt="Lunch">
-                    </div>
-                    <div class="tileComponent2">
-                        <div class="tileHeading">
-                            <a href="listing.html">Lunch</a>
-                        </div>
-                        <div class="tileSubHeading">Enjoy your Lunch</div>
+                <div class="card" style="width:280px; display:inline-block;">
+                    <img class="card-img-top" src="./images/lunch.png" alt="Lunch">
+                    <div class="card-body">
+                        <a class="card-title" href="listing.html">Lunch</a>
+                        <div class="card-text">Enjoy your Lunch</div>
                     </div>
                 </div>
-                <div class="tileContainer">
-                    <div class="tileComponent1">
-                        <img src="./images/burger1.jpeg" alt="Nightlife" class="burger">
-                    </div>
-                    <div class="tileComponent2">
-                        <div class="tileHeading">
-                            <a href="listing.html">Fastfood</a>
-                        </div>
-                        <div class="tileSubHeading">Enjoy your fastfood</div>
+                <div class="card" style="width:280px; display:inline-block;">
+                    <img class="card-img-top" src="./images/samosa.jfif" alt="Burger">
+                    <div class="card-body">
+                        <a class="card-title" href="listing.html">Fastfood</a>
+                        <div class="card-text">Enjoy your Fastfood</div>
                     </div>
                 </div>
-                <div class="tileContainer">
-                    <div class="tileComponent1">
-                        <img src="./images/nightlife.png" alt="Nightlife">
-                    </div>
-                    <div class="tileComponent2">
-                        <div class="tileHeading">
-                            <a href="listing.html">Nightlife</a>
-                        </div>
-                        <div class="tileSubHeading">Enjoy your Nightlife</div>
+                <div class="card" style="width:280px; display:inline-block;">
+                    <img class="card-img-top" src="./images/nightlife.png" alt="Nightlife">
+                    <div class="card-body">
+                        <a class="card-title" href="listing.html">Nightlife</a>
+                        <div class="card-text">Enjoy your Nightlife</div>
                     </div>
                 </div>
             </div>
