@@ -1,112 +1,108 @@
 <html>
-    <head>
-        <title>Zomato</title>
-        <link rel="stylesheet" href="index.css" style="text/css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<head>
+    <title>Zomato</title>
+    <link rel="stylesheet" href="index.css" style="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="first.js"></script>
 
 
+    <meta name="viewport" content="device-width=device">
+</head>
+
+<body style="background-color: #e9a48c;">
+    <!--Header Starts-->
+    <div class="containers">
+        <div class=" background-img">
+
+            <a href=""><button class="btn btn-primary" href="#">
+                Login
+            </button></a>
+            <a href="#"><button class="btn btn-success" >
+                SignUP
+            </button></a>
+            <div id="logo">
+                <span>TP!</span>
+            </div>
+            <div class="heading">
+                <p>Find the Best Restaurants near you!!!</p>
+            </div>
+            <div class="dropdown">
+                <select class="city" id="city" onChange="getHotels()">
+                    <option>---Select City---</option>
+                </select>
+                <select class="restauSelect" id="hotels" >
+                    <option>---Select Restaurants---</option>
+
+                </select>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--Search Ends-->
+    <!--quicksearch starts-->
+    <div id="quicksearch">
+        <span id="quickHeading" style="text-align: none;">Quick Search</span>
+        <h1 id="quickSubHeading">Search Your Favorite Restaurants by Meal</h1>
+        <div class="mainTile">
+            <div class="card" style="width:280px; display:inline-block; ">
+                <img class="card-img-top" src="./images/sacks.png" alt="Snacks">
+                <div class="card-body">
+                    <a class="card-title" href="listing.html">Snacks</a>
+                    <div class="card-text">Enjoy your Snacks</div>
+                </div>
+            </div>
+            <div class="card" style="width:280px; display:inline-block;">
+                <img class="card-img-top" src="./images/lunch.png" alt="Lunch">
+                <div class="card-body">
+                    <a class="card-title" href="listing.html">Lunch</a>
+                    <div class="card-text">Enjoy your Lunch</div>
+                </div>
+            </div>
+            <div class="card" style="width:280px; display:inline-block;">
+                <img class="card-img-top" src="./images/drinks.png" alt="Drinks">
+                <div class="card-body">
+                    <a class="card-title" href="listing.html">Soft Drinks</a>
+                    <div class="card-text">Enjoy your drinks</div>
+                </div>
+            </div>
+            <div class="card" style="width:280px; display:inline-block;">
+                <img class="card-img-top" src="./images/lunch.png" alt="Lunch">
+                <div class="card-body">
+                    <a class="card-title" href="listing.html">Lunch</a>
+                    <div class="card-text">Enjoy your Lunch</div>
+                </div>
+            </div>
+            <div class="card" style="width:280px; display:inline-block;">
+                <img class="card-img-top" src="./images/samosa.jfif" alt="Burger">
+                <div class="card-body">
+                    <a class="card-title" href="listing.html">Fastfood</a>
+                    <div class="card-text">Enjoy your Fastfood</div>
+                </div>
+            </div>
+            <div class="card" style="width:280px; display:inline-block;">
+                <img class="card-img-top" src="./images/nightlife.png" alt="Nightlife">
+                <div class="card-body">
+                    <a class="card-title" href="listing.html">Nightlife</a>
+                    <div class="card-text">Enjoy your Nightlife</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = getCity();
         
-        <meta name="viewport" content="device-width=device">
-    </head>
-    <body style="background-color:#e9a48c;">
-        <!--Header Starts-->
-        <div class="containers">
-            <div class=" background-img">
-                
-                <a class="btn btn-success" href="#" >
-                    Login
-                </a>
-                <a class="btn btn-warning" href="#" >
-                    SignUP
-                </a>
-                <div id="logo">
-                    <span>TP!</span>
-                </div>
-                <div class="heading">
-                    <p>Find the Best Restaurants near you!!!</p>
-                </div>
-                <div class="row">
-                    <div class="dropdown">
-                        <select>
-                            <option>---Select City---</option>
-                            <option>Nandurbar</option>
-                            <option>Shahada</option>
-                            <option>Mumbai</option>           
-                            <option>Pune</option>
-                        </select>
-                        <select class="restauSelect">
-                            <option>---Select Restaurants---</option>
-                            <option></option>
-                            <option></option>
-                            <option></option>
-                            <option></option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Search Ends-->
-        <!--quicksearch starts-->
-        <div id="quicksearch">
-            <span id="quickHeading" style="text-align: none;">Quick Search</span>
-            <h1 id="quickSubHeading">Search Your Favorite Restaurants by Meal</h1>
-            <div class="mainTile">
-                <div class="card" style="width:280px; display:inline-block; ">
-                    <img class="card-img-top" src="./images/sacks.png" alt="Snacks">
-                    <div class="card-body">
-                        <a class="card-title" href="listing.html">Snacks</a>
-                        <div class="card-text">Enjoy your Snacks</div>
-                    </div>
-                </div>
-                <div class="card" style="width:280px; display:inline-block;">
-                    <img class="card-img-top" src="./images/lunch.png" alt="Lunch">
-                    <div class="card-body">
-                        <a class="card-title" href="listing.html">Lunch</a>
-                        <div class="card-text">Enjoy your Lunch</div>
-                    </div>
-                </div>
-                <div class="card" style="width:280px; display:inline-block;">
-                    <img class="card-img-top" src="./images/drinks.png" alt="Drinks">
-                    <div class="card-body">
-                        <a class="card-title" href="listing.html">Soft Drinks</a>
-                        <div class="card-text">Enjoy your drinks</div>
-                    </div>
-                </div>
-                <div class="card" style="width:280px; display:inline-block;">
-                    <img class="card-img-top" src="./images/lunch.png" alt="Lunch">
-                    <div class="card-body">
-                        <a class="card-title" href="listing.html">Lunch</a>
-                        <div class="card-text">Enjoy your Lunch</div>
-                    </div>
-                </div>
-                <div class="card" style="width:280px; display:inline-block;">
-                    <img class="card-img-top" src="./images/samosa.jfif" alt="Burger">
-                    <div class="card-body">
-                        <a class="card-title" href="listing.html">Fastfood</a>
-                        <div class="card-text">Enjoy your Fastfood</div>
-                    </div>
-                </div>
-                <div class="card" style="width:280px; display:inline-block;">
-                    <img class="card-img-top" src="./images/nightlife.png" alt="Nightlife">
-                    <div class="card-body">
-                        <a class="card-title" href="listing.html">Nightlife</a>
-                        <div class="card-text">Enjoy your Nightlife</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--quicksearch end-->
-        <footer>
-            <hr>
-            <center>
-                <h3>&copy; Tejas Patil</h3>
-            </center>
-        </footer>
-    </body>
+    </script>
+    <!--quicksearch end-->
+    <footer>
+        <hr>
+        <center>
+            <h3>&copy; Tejas Patil</h3>
+        </center>
+    </footer>
+</body>
+
 </html>

@@ -13,7 +13,7 @@ body{
 /*Header Css ends*/
 /*Search Css Starts*/
 a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .btn{
@@ -81,20 +81,26 @@ a{
     margin-top: 14%;
     margin-left: 32%;
 }
-select{
+.city{
     height: 40px;
-    margin-left: 18%;
     width: 30%;
+    margin-left:10%;
+    float: left;
+    margin-top: 34%
 }
 
 .dropdown{
     width: 60%;
-    margin-left:40%;
     position: absolute;
-    margin-top: 22%;
+    margin-left: 22%;
+}
+.row{
+    display: inline-block;
 }
 .restauSelect{
     width:50%;
+    height: 40px;
+    margin-top: 34%
 }
 
 .location{
@@ -137,11 +143,7 @@ select{
     margin-left: 3%;
     box-shadow:10px 20px 10px grey ;
     margin-top: 3%;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
     background-color: #f1d9d9;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
 }
 
 .card:hover{
@@ -149,6 +151,9 @@ select{
 }
 .card-body{
     background-color: #e5d1d1;
+}
+.card > img{
+    width: 100%;
 }
 .card-body > a{
     text-decoration: none;

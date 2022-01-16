@@ -1,0 +1,163 @@
+{
+  "city": [
+    {
+      "_id": "1",
+      "city_name": "Nandurbar",
+      "city_id": "1",
+      "country_name": "India"
+    },
+    {
+      "_id": "2",
+      "city_name": "Mumbai",
+      "city_id": "2",
+      "country_name": "India"
+    },
+    {
+      "_id": "3",
+      "city_name": "Pune",
+      "city_id": "3",
+      "country_name": "India"
+    },
+    {
+      "_id": "4",
+      "city_name": "Dhule",
+      "city_id": "4",
+      "country_name": "India"
+    },
+    {
+      "_id": "5",
+      "city_name": "Nashik",
+      "city_id": "5",
+      "country_name": "India"
+    },
+    {
+      "_id": "6",
+      "city_name": "Nagpur",
+      "city_id": "6",
+      "country_name": "India"
+    }
+  ],
+    "hotels": [
+      {
+        "_id": "1",
+        "city_name": "Mumbai",
+        "city": "2",
+        "hotels_name": "Hotel Trident"
+        
+      },
+      {
+        "_id": "2",
+        "city_name": "Mumbai",
+        "city": "2",
+        "hotels_name": "Four Seasons"
+      },
+      {
+        "_id": "3",
+        "city_name": "Mumbai",
+        "city": "2",
+        "hotels_name": "Courtyard By Marriot"
+      },
+      {
+        "_id": "4",
+        "city": "2",
+        "city_name": "Mumbai",
+        "hotels_name": "Lemon Tree Premier"
+      },
+      {
+        "_id": "5",
+        "city": "1",
+        "city_name": "Nandurbar",
+        "hotels_name": "Sai Plaza Residency"
+      },
+      {
+        "_id": "6",
+        "city": "1",
+        "city_name": "Nandurbar",
+        "hotels_name": "Patel Residency"
+      },
+      {
+        "_id": "7",
+        "city": "1",
+        "city_name": "Nandurbar",
+        "hotels_name": "Hotel Heera Executive"
+      },
+      {
+        "_id": "8",
+        "city_id": "1",
+        "city_name": "Nandurbar",
+        "hotels_name": "Hotel Sher-E-Punjab"
+      },
+      {
+        "_id": "9",
+        "city": "3",
+        "city_name": "Pune",
+        "hotels_name": "Hotel Parc Estique"
+      },
+      {
+        "_id": "10",
+        "city": "3",
+        "city_name": "Pune",
+        "hotels_name": "Holiday Inn Express"
+      },
+      {
+        "_id": "11",
+        "city": "3",
+        "city_name": "Pune",
+        "hotels_name": "The Central Park Hotel"
+      },
+      {
+        "_id": "12",
+        "city": "3",
+        "city_name": "Pune",
+        "hotels_name": "Novotel Pune Nagar Road"
+      },
+      {
+        "_id": "13",
+        "city": "4",
+        "city_name": "Dhule",
+        "hotels_name": "Hotel Rasraj"
+      },
+      {
+        "_id": "14",
+        "city": "4",
+        "city_name": "Dhule",
+        "hotels_name": "Purnima Regency"
+      },
+      {
+        "_id": "15",
+        "city": "4",
+        "city_name": "Dhule",
+        "hotels_name": "Hotel Chandradeep"
+      },
+      {
+        "_id": "16",
+        "city": "4",
+        "city_name": "Dhule",
+        "hotels_name": "Hotel Idli"
+      },
+      {
+        "_id": "17",
+        "city": "5",
+        "city_name": "Nashik",
+        "hotels_name": "Hotel Triton"
+      },
+      {
+        "_id": "18",
+        "city": "5",
+        "city_name": "Nashik",
+        "hotels_name": "Hotel Panchavati"
+      },
+      {
+        "_id": "19",
+        "city": "5",
+        "city_name": "Nashik",
+        "hotels_name": "Hotel Jatra"
+      },
+      {
+        "_id": "20",
+        "city": "5",
+        "city_name": "Nashik",
+        "hotels_name": "IBIS Nashik"
+      }
+    ]
+}
