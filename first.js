@@ -26,7 +26,7 @@ const getHotels = () => {
     .then((data) => {
         for(i=0;i<data.length;i++){
             let element = document.createElement('option')
-            let text = document.createTextNode(data[i].hotels_name)
+            let text = document.createTextNode(data[i].name)
             element.appendChild(text)
             document.getElementById('hotels').appendChild(element)
         }
