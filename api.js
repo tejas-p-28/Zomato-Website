@@ -24,12 +24,76 @@ app.get('/location',(req,res) => {
 //restaurant as per location
 app.get('/restaurants',(req,res) => {
     let stateId = Number(req.query.state_id)
+    let mealId = Number(req.query.meal_id)
     let query = {};
-    if(stateId){
+    if(stateId && mealId){
+        query = {"mealTypes.mealtype_id":mealId,state_id:stateId}
+    }
+    else if(stateId){
         query = {state_id:stateId}
+    }
+    else if(mealId){
+        query = {"mealTypes.mealtype_id":mealId}
     }
     console.log(">>>>restId",stateId)
     db.collection('restaurantsdata').find(query).toArray((err,result) => {
+        if(err) throw err;
+        res.send(result)
+    })
+})
+
+//mealtype
+app.get('/mealtype',(req,res) => {
+    db.collection('mealtype').find().toArray((err,result) =>{
+        if(err) throw err;
+        res.send(result)
+    })
+})
+
+//restaurants detail
+app.get('/details/:id',(req,res) => {
+    let restId = Number(req.params.id)
+    db.collection('restaurantsdata').find({restaurant_id:restId}).toArray((err,result) => {
+        if(err) throw err;
+        res.send(result)
+    })
+})
+
+//menu wrt to restaurants
+app.get('/menu/:id',(req,res) => {
+    let restId = Number(req.params.id)
+    db.collection('restaurantmenu').find({restaurant_id:restId}).toArray((err,result) => {
+        if(err) throw err;
+        res.send(result)
+    })
+})
+
+
+//filter
+app.get('/filter/:mealId',(req,res) => {
+    let sort = {cost:1}
+    let mealId = Number(req.params.mealId)
+    let cuisineId = Number(req.query.cuisine)
+    let lcost = Number(req.query.lcost)
+    let hcost = Number(req.query.hcost)
+    let query = {}
+    if(req.query.sort){
+        sort = {cost:req.query.sort}
+    }
+    else if(cuisineId&lcost&hcost){
+        query = {
+            "cuisines.cuisine_id":cuisineId,
+            "mealTypes.mealtype_id":mealId,
+            $and:[{cost:{$gt:lcost,$lt:hcost}}]
+        }
+    }
+    else if(cuisineId){
+        query = {"cuisines.cuisine_id":cuisineId,"mealTypes.mealtype_id":mealId}
+    }
+    else if(lcost&hcost){
+        query = {$and:[{cost:{$gt:lcost,$lt:hcost}}],"mealTypes.mealtype_id":mealId}
+    }
+    db.collection('restaurantsdata').find(query).sort(sort).toArray((err,result) => {
         if(err) throw err;
         res.send(result)
     })
