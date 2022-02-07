@@ -1,0 +1,27 @@
+{
+  "name": "Zomato",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api.js",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "mongodb": "^4.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node api.js",
+    "zomato": "nodemon api.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tp-the-developer/Zomato-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tp-the-developer/Zomato-Website/issues"
+  },
+  "homepage": "https://github.com/tp-the-developer/Zomato-Website#readme"
+}

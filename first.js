@@ -1,5 +1,5 @@
 let url = "http://localhost:1255/city";
-const hotelUrl ="http://localhost:1255/hotels";
+const hotelUrl = "http://localhost:1255/hotel";
 
 function getCity(){
     fetch(url)
@@ -17,13 +17,14 @@ function getCity(){
 
 
 const getHotels = () => {
-    const city_id = document.getElementById('city').value;
+    const cityId = document.getElementById('city').value;
     while(hotels.length>0){
         hotels.remove(0)
     }
-    fetch(`${hotelUrl}${city_id}`)
+    fetch(`${hotelUrl}?city=${cityId}`)
     .then((res) => res.json())
     .then((data) => {
+        console.log(data[i])
         for(i=0;i<data.length;i++){
             let element = document.createElement('option')
             let text = document.createTextNode(data[i].name)
