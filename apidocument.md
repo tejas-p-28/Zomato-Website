@@ -51,11 +51,11 @@ Page 3
 
 page 4
 > menu items on user selection
-  > 
+  > localhost:6701/menuItem
   > body [1,4,5]
 
 > api to place order
-  > 
+  > localhost:6701/placeOrder
 
 page 5
 > list all order
