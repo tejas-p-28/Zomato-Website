@@ -125,7 +125,7 @@ app.get('/orders',(req,res) => {
 })
 
 //place order
-app.post('/placeorder',(req,res) => {
+app.post('/placeOrder',(req,res) => {
     db.collection('orders').insert(req.body,(err,result) => {
         if(err) throw err;
         res.send("Order Added")
