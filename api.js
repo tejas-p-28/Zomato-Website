@@ -142,12 +142,12 @@ app.post('/menuItem',(req,res) => {
 })
 
 //delete order
-app.delete('/deleteOrder',(req,res) => {
-    db.collection('orders').remove({},(err,result) => {
-        if(err) throw err;
-        res.send(result)
-    })
-})
+// app.delete('/deleteOrder',(req,res) => {
+//     db.collection('orders').remove({},(err,result) => {
+//         if(err) throw err;
+//         res.send(result)
+//     })
+// })
 
 //update order
 app.put('/updateOrder/:id',(req,res) => {
